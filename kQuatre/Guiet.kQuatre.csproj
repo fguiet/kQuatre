@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2BBAB9C2-2A29-49D1-B925-D898724969EC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Guiet.kQuatre</RootNamespace>
+    <AssemblyName>Guiet.kQuatre</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FTD2XX_NET">
+      <HintPath>Libs\ftdi\FTD2XX_NET.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Core, Version=7.2.4630.5, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\XBeeJavaLibrary\IKVM.OpenJDK.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Text, Version=7.2.4630.5, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\XBeeJavaLibrary\IKVM.OpenJDK.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Util, Version=7.2.4630.5, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\XBeeJavaLibrary\IKVM.OpenJDK.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.Runtime, Version=7.2.4630.5, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\XBeeJavaLibrary\IKVM.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.Runtime.JNI, Version=7.2.4630.5, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\XBeeJavaLibrary\IKVM.Runtime.JNI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\telerik\Telerik.WinControls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.GridView, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\telerik\Telerik.WinControls.GridView.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\telerik\Telerik.WinControls.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\telerik\TelerikCommon.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="xbjlib-1.1.1, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\XBeeJavaLibrary\xbjlib-1.1.1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business\Emetteur2.cs" />
+    <Compile Include="Business\Exceptions\NoTransmitterFoundException.cs" />
+    <Compile Include="Business\Receptor.cs" />
+    <Compile Include="Business\Firework.cs" />
+    <Compile Include="Business\EtatArtifice.cs" />
+    <Compile Include="Business\FireworkStatus.cs" />
+    <Compile Include="Business\Ligne.cs" />
+    <Compile Include="Business\LigneArtifice.cs" />
+    <Compile Include="Business\ReceptorAddress.cs" />
+    <Compile Include="Business\ThreadedBindingList.cs" />
+    <Compile Include="Business\XbeeDeviceManager.cs" />
+    <Compile Include="UI\ManuelLaunchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ManuelLaunchForm.Designer.cs">
+      <DependentUpon>ManuelLaunchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\TestForm.Designer.cs">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\FireworkForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FireworkForm.Designer.cs">
+      <DependentUpon>FireworkForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControl\FireworkUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserControl\FireworkUserControl.Designer.cs">
+      <DependentUpon>FireworkUserControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI\ManuelLaunchForm.resx">
+      <DependentUpon>ManuelLaunchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\TestForm.resx">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UI\FireworkForm.resx">
+      <DependentUpon>FireworkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserControl\FireworkUserControl.resx">
+      <DependentUpon>FireworkUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\TestsFiles\TestBoitier1.k4" />
+    <None Include="Resources\TestsFiles\TestBoitier1_2_3.k4" />
+    <None Include="Resources\TestsFiles\TestBoitier2.k4" />
+    <None Include="Resources\TestsFiles\TestBoitier3.k4" />
+    <None Include="Sketch\SketchBoitier_v1.fzz" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TestsFiles\FireworkTemplate.k4">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Libs\ftdi\FTD2XX_NET.dll" />
+    <Content Include="Libs\ftdi\FTD2XX_NET.XML" />
+    <Content Include="Libs\ftdi\License.txt" />
+    <Content Include="Libs\telerik\Telerik.WinControls.dll" />
+    <Content Include="Libs\telerik\Telerik.WinControls.GridView.dll" />
+    <Content Include="Libs\telerik\Telerik.WinControls.GridView.xml" />
+    <Content Include="Libs\telerik\Telerik.WinControls.UI.dll" />
+    <Content Include="Libs\telerik\Telerik.WinControls.UI.xml" />
+    <Content Include="Libs\telerik\Telerik.WinControls.xml" />
+    <Content Include="Libs\telerik\TelerikCommon.dll" />
+    <Content Include="Libs\XBeeJavaLibrary\ikvm-native-win32-x86.dll" />
+    <Content Include="Libs\XBeeJavaLibrary\IKVM.OpenJDK.Core.dll" />
+    <Content Include="Libs\XBeeJavaLibrary\IKVM.OpenJDK.Text.dll" />
+    <Content Include="Libs\XBeeJavaLibrary\IKVM.OpenJDK.Util.dll" />
+    <Content Include="Libs\XBeeJavaLibrary\IKVM.Runtime.dll" />
+    <Content Include="Libs\XBeeJavaLibrary\IKVM.Runtime.JNI.dll" />
+    <Content Include="Libs\XBeeJavaLibrary\rxtxSerial.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\XBeeJavaLibrary\xbjlib-1.1.1.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\done.png" />
+    <None Include="Resources\inprogress.png" />
+    <None Include="Resources\standby.png" />
+    <None Include="Resources\cross.png" />
+    <None Include="Resources\warning.png" />
+    <Content Include="Sketch\SketchBoitier_v1_bb.jpg" />
+    <Content Include="UI\Resources\add.png" />
+    <Content Include="UI\Resources\form_blue.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FireworkDefinition fireworkName="Nom du feu" fireworkDate="14/07/2015">
+  <Receptors>
+    <Receptor name="Boitier 3" macAddress="0013A200408BED48" nbOfRelays="16" />
+  </Receptors>
+  <Lines>
+    <Line number="1">
+      <Fireworks>
+        <Firework designation="Crocket">
+          <ReceptorAddress macAddress="0013A200408BED48" relayNumber="1" />
+          <FireworkIgnition>00:00:01</FireworkIgnition>
+          <FireworkDuration>00:00:05</FireworkDuration>
+        </Firework>
+      </Fireworks>
+    </Line>
+    <Line number="2">
+      <Fireworks>
+        <Firework designation="Saule pleureur">
+          <ReceptorAddress macAddress="0013A200408BED48" relayNumber="2" />
+          <FireworkIgnition>00:00:06</FireworkIgnition>
+          <FireworkDuration>00:00:05</FireworkDuration>
+        </Firework>
+      </Fireworks>
+    </Line>
+    <Line number="3">
+      <Fireworks>
+        <Firework designation="pot à feu">
+          <ReceptorAddress macAddress="0013A200408BED48" relayNumber="3" />
+          <FireworkIgnition>00:00:11</FireworkIgnition>
+          <FireworkDuration>00:00:05</FireworkDuration>
+        </Firework>
+      </Fireworks>
+    </Line>
+    <Line number="4">
+      <Fireworks>
+        <Firework designation="DaDa">
+          <ReceptorAddress macAddress="0013A200408BED48" relayNumber="4" />
+          <FireworkIgnition>00:00:16</FireworkIgnition>
+          <FireworkDuration>00:00:05</FireworkDuration>
+        </Firework>
+      </Fireworks>
+    </Line>
+    <Line number="5">
+      <Fireworks>
+        <Firework designation="juju">
+          <ReceptorAddress macAddress="0013A200408BED48" relayNumber="5" />
+          <FireworkIgnition>00:00:21</FireworkIgnition>
+          <FireworkDuration>00:00:05</FireworkDuration>
+        </Firework>
+      </Fireworks>
+    </Line>
+    <Line number="6">
+      <Fireworks>
+        <Firework designation="novak">
+          <ReceptorAddress macAddress="0013A200408BED48" relayNumber="6" />
+          <FireworkIgnition>00:00:26</FireworkIgnition>
+          <FireworkDuration>00:00:05</FireworkDuration>
+        </Firework>
+      </Fireworks>
+    </Line>
+    <Line number="7">
+      <Fireworks>
+        <Firework designation="ursule">
+          <ReceptorAddress macAddress="0013A200408BED48" relayNumber="7" />
+          <FireworkIgnition>00:00:31</FireworkIgnition>
+          <FireworkDuration>00:00:05</FireworkDuration>
+        </Firework>
+      </Fireworks>
+    </Line>
+    <Line number="8">
+      <Fireworks>
+        <Firework designation="kaka">
+          <ReceptorAddress macAddress="0013A200408BED48" relayNumber="8" />
+          <FireworkIgnition>00:00:36</FireworkIgnition>
+          <FireworkDuration>00:00:05</FireworkDuration>
+        </Firework>
+      </Fireworks>
+    </Line>
+    <Line number="9">
+      <Fireworks>
+        <Firework designation="lulu">
+          <ReceptorAddress macAddress="0013A200408BED48" relayNumber="9" />
+          <FireworkIgnition>00:00:41</FireworkIgnition>
+          <FireworkDuration>00:00:05</FireworkDuration>
+        </Firework>
+      </Fireworks>
+    </Line>
+    <Line number="10">
+      <Fireworks>
+        <Firework designation="hector">
+          <ReceptorAddress macAddress="0013A200408BED48" relayNumber="10" />
+          <FireworkIgnition>00:00:46</FireworkIgnition>
+          <FireworkDuration>00:00:05</FireworkDuration>
+        </Firework>
+      </Fireworks>
+    </Line>
+    <Line number="11">
+      <Fireworks>
+        <Firework designation="paupaul">
+          <ReceptorAddress macAddress="0013A200408BED48" relayNumber="11" />
+          <FireworkIgnition>00:00:51</FireworkIgnition>
+          <FireworkDuration>00:00:05</FireworkDuration>
+        </Firework>
+      </Fireworks>
+    </Line>
+    <Line number="12">
+      <Fireworks>
+        <Firework designation="baba cool">
+          <ReceptorAddress macAddress="0013A200408BED48" relayNumber="12" />
+          <FireworkIgnition>00:00:56</FireworkIgnition>
+          <FireworkDuration>00:00:05</FireworkDuration>
+        </Firework>
+      </Fireworks>
+    </Line>
+    <Line number="13">
+      <Fireworks>
+        <Firework designation="gogol">
+          <ReceptorAddress macAddress="0013A200408BED48" relayNumber="13" />
+          <FireworkIgnition>00:01:01</FireworkIgnition>
+          <FireworkDuration>00:00:05</FireworkDuration>
+        </Firework>
+      </Fireworks>
+    </Line>
+    <Line number="14">
+      <Fireworks>
+        <Firework designation="Fred">
+          <ReceptorAddress macAddress="0013A200408BED48" relayNumber="14" />
+          <FireworkIgnition>00:01:06</FireworkIgnition>
+          <FireworkDuration>00:00:05</FireworkDuration>
+        </Firework>
+      </Fireworks>
+    </Line>
+    <Line number="15">
+      <Fireworks>
+        <Firework designation="Tudor">
+          <ReceptorAddress macAddress="0013A200408BED48" relayNumber="15" />
+          <FireworkIgnition>00:01:11</FireworkIgnition>
+          <FireworkDuration>00:00:05</FireworkDuration>
+        </Firework>
+      </Fireworks>
+    </Line>
+    <Line number="16">
+      <Fireworks>
+        <Firework designation="Souchon">
+          <ReceptorAddress macAddress="0013A200408BED48" relayNumber="16" />
+          <FireworkIgnition>00:01:16</FireworkIgnition>
+          <FireworkDuration>00:00:05</FireworkDuration>
+        </Firework>
+      </Fireworks>
+    </Line>
+
+
+  </Lines>
+</FireworkDefinition>

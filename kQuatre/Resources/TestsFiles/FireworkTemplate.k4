@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FireworkDefinition fireworkName="Nom du feu" fireworkDate="14/07/2015">
+  <Receptors>
+    <Receptor name="Boitier 1" macAddress="0013A200408BED5F" nbOfRelays="16" />
+  </Receptors>
+  <Lines>
+    <Line number="1">
+      <Fireworks>
+        <Firework designation="Etincelles du diable">
+          <ReceptorAddress macAddress="0013A200408BED5F" relayNumber="1" />
+          <FireworkIgnition>00:00:05</FireworkIgnition>
+          <FireworkDuration>00:00:05</FireworkDuration>
+        </Firework>
+      </Fireworks>
+    </Line>
+    <Line number="2">
+      <Fireworks>
+        <Firework designation="Feu n°2 (bombe de 14)">
+          <ReceptorAddress macAddress="0013A200408BED5F" relayNumber="2" />
+          <FireworkIgnition>00:00:10</FireworkIgnition>
+          <FireworkDuration>00:00:05</FireworkDuration>
+        </Firework>
+        <Firework designation="Relay 3">
+          <ReceptorAddress macAddress="0013A200408BED5F" relayNumber="3" />
+          <FireworkIgnition>00:00:15</FireworkIgnition>
+          <FireworkDuration>00:00:05</FireworkDuration>
+        </Firework>
+        <Firework designation="Relay 4">
+          <ReceptorAddress macAddress="0013A200408BED5F" relayNumber="4" />
+          <FireworkIgnition>00:00:20</FireworkIgnition>
+          <FireworkDuration>00:00:05</FireworkDuration>
+        </Firework>
+      </Fireworks>
+    </Line>
+    <Line number="3">
+      <Fireworks>
+        <Firework designation="Relay 5">
+          <ReceptorAddress macAddress="0013A200408BED5F" relayNumber="5" />
+          <FireworkIgnition>00:00:25</FireworkIgnition>
+          <FireworkDuration>00:00:05</FireworkDuration>
+        </Firework>
+        <Firework designation="Relay 6">
+          <ReceptorAddress macAddress="0013A200408BED5F" relayNumber="6" />
+          <FireworkIgnition>00:00:30</FireworkIgnition>
+          <FireworkDuration>00:00:05</FireworkDuration>
+        </Firework>
+        <Firework designation="Relay 7">
+          <ReceptorAddress macAddress="0013A200408BED5F" relayNumber="7" />
+          <FireworkIgnition>00:00:35</FireworkIgnition>
+          <FireworkDuration>00:00:05</FireworkDuration>
+        </Firework>
+      </Fireworks>
+    </Line>
+  </Lines>
+</FireworkDefinition>
